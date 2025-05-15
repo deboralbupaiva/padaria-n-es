@@ -1,13 +1,13 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff9f0;
+    background-color: rgb(246, 196, 97);
     margin: 20px;
     padding: 0;
     color: #333;
 }
 h1{
     text-align: center;
-    color: #b85c38;
+    color: #d27c26;
 }
 form{
     display: flex;
@@ -21,30 +21,29 @@ form input, form button{
     font-size: 1em;
 }
 form button{
-    background-color: #b85c38;
+    background-color: #d27c26;
     color: white;
     border: none;
     cursor: pointer;
 }
 form button:hover{
-    background-color: #8c3e18;
+    background-color: #b56b22;
 }
-
 #busca{
     display: block;
     margin: 0 auto 20px auto;
     padding: 10px;
     width: 60%;
-    font-size: 1em; 
+    font-size: 1em;
 }
 table{
     width: 100%;
     border-collapse: collapse;
 }
 thead{
-    background-color: #f4e2d1;
+    background-color: #f4e2df;
 }
-th,td{
+th, tr{
     padding: 10px;
     border: 1px solid;
     text-align: center;
