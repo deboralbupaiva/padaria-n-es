@@ -11,7 +11,7 @@ const busca = document.getElementById("busca");
 //Funcão para salvar os dados do localstorage
 
 function salvarDados(){
-    localStorage.setItem("produtos", JSON,stringify(produtos));
+    localStorage.setItem("produtos", JSON.stringify(produtos));
 }
 
 //Função para desenhar a tabela com os produtos
@@ -29,22 +29,22 @@ function atualizarTabela(){
 
             //Colunas de tabela
             tr.innerHTML = `
-                <td>${produto.nome}<\td>
-                <td>${produto.quantidade}<\td>
-                <td>${produto.unidade}<\td>
-                <td>${produto.categoria}<\td>
+                <td>${produto.nome}</td>
+                <td>${produto.quantidade}</td>
+                <td>${produto.unidade}</td>
+                <td>${produto.categoria}</td>
                 <td>
                     <button class="acao adicionar" onclick="alterarQuantidade(${index},1)">+</button>
                     <button class="acao remover" onclick="alterarQuantidade(${index},-1)">-</button>
                     <button class="acao remover" onclick="removerProduto(${index})">Excluir</button>
-                <\td>
+                </td>
             `;
                      tabela.appendChild(tr);
         }
     });
 }
 //Adicionar um novo produto
-form.addEventListener("sumit",function(event){
+form.addEventListener("submit",function(event){
     event.preventDefault(); // Evita o recarregamento da página
 
     const nome = document.getElementById("nome").value;
@@ -67,7 +67,7 @@ form.addEventListener("sumit",function(event){
     salvarDados();
     atualizarTabela();
 
-    //Limpamo formulário
+    //Limpa formulário
     form.reset();
 });
 
